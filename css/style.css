@@ -1,0 +1,182 @@
+/* GENERAL */
+:root{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all .2s ease;
+    scrollbar-width: none;
+    /* border: .1rem solid #f00; */
+}
+
+body{
+    display: grid;
+    grid-template-rows: 20vh 200vh 15vh;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+/* HEADER */
+header{
+    height: 100%;
+    padding: 5% 5% 0 5%;
+}
+
+header p{
+    color: #68e1fd;         
+    font-size: 5rem;
+    display: inline;
+}
+
+svg{
+    display: inline;
+    fill: #68e1fd;
+    width: 6rem;
+    height: 6rem;
+}
+
+svg:hover{
+    fill: #4F4F4F;
+}
+
+header img{
+    display: inline;
+    width: 5rem;
+    float: right;
+}
+
+
+/* HERO SECTION */
+.heroSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+
+    height: 100vh;
+    padding: 10%;
+}
+
+/* left side */
+.textHero{
+    margin-right: 10%;
+}
+
+h1,
+h2{
+    font-size: 4rem;
+    color: #000F37;
+}
+
+.grayP{
+    color: #464545;
+    margin: 2rem auto;
+}
+
+.button a{
+    display: inline-block;
+    color: #000;
+    background-color: #68e1fd;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+}
+
+.button a:hover{
+    color: #68e1fd;
+    background-color: #4F4F4F;
+}
+
+/* right side */
+.heroSection img{
+    width: 80%;
+    height: auto;
+}
+
+
+/* SERVICE SECTION */
+.serviceSection{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    
+    height: 100vh;
+    background-color:#68e1fd;
+    padding: 4rem;
+}
+
+.textService{
+    text-align: center;
+    width: 50%;
+}
+
+/* white div */
+.services{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-items: center;
+
+    background-color: #fff;
+    width: 60%;
+    max-width: 90%;
+    margin: 5rem auto;
+    padding: 10rem;
+}
+
+/* left side */
+li{
+    position: relative;
+    margin: 3rem;
+    font-weight: 900;
+    font-size: 2rem;
+}li::before{
+    content: url("/assets/svg/check-mark.svg");
+    position: absolute;
+    padding-right: 9rem;
+    right: 10rem;
+    top: .2rem;
+}
+
+/* right side */
+.services img{
+    width: 80%;
+    height: 80%;
+}
+
+
+ /* FOOTER  */
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5%;
+}
+
+footer p{
+    align-self: center;
+}
+
+.social_media{
+    justify-self: end;
+    align-self: center;
+}
+
+.social_media a{
+    color: #000;
+    margin: 2rem;
+}
+.social_media a:hover{
+    color: #68e1fd;
+}
